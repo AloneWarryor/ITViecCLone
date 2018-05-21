@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script>
+    function onload() {
+      var hello = 12;
+    }
+
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    }
+  </script>
+</head>
+<br>
+
+<body class="bg-light">
+  <!-- Header-start -->
+  <div w3-include-html="header.html"></div>
+  <!-- Header-end -->
+  <div class="container mt-5 p-0">
+    <div class="content">
+      <!-- Nav pills -->
+      <ul class="nav nav-tabs border border-light" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#myaccount">My Account </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#robot">My Job Robot</a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content border bg-white">
+        <br />
+        <div id="myaccount" class="container tab-pane active">
+          <form class="container">
+            <div class="form-group d-inline">
+              <div class="d-flex align-items-end">
+                <img src="picture/ava.png" alt="" class="img-rounded pull-left" />
+                <div class="ml-3 m-0 align-bottom align-text-bottom">
+                  <h5 class="font-weight-upper-normal">
+                    Welcome,
+                    <br />
+                  </h5>
+                  <h5 class="font-weight-upper-normal m-0">
+                    Hello Nguyen Van Quang Vinh!
+                  </h5>
+                </div>
+              </div>
+              <div class="mt-1">
+                Manager your ITViec account setting.
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="showUserEmail" id="lb-email" class="col-2 col-sm-1 col-lg-1 col-form-label">Email</label>
+              <div class="col-10 col-sm-11 col-lg-4">
+                <p class="form-control-plaintext text-secondary">vinhcht@gmail.com</P>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="showUserEmail" id="lb-name" class="col-2 col-sm-1 col-lg-1 col-form-label">Name</label>
+              <div class="col-10 col-sm-11 col-lg-4">
+                <input type="text" class="form-control" id="ip-name" placeholder="Vinh (Dx2)">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="CVupload" id="lb-cv" class="col-2 col-sm-1 col-lg-1 col-form-label">CV</label>
+              <div class="col-10 col-sm-11 col-lg-4">
+                <input for="uploadCV" class="form-control " id="ip-cv" placeholder="Select your CV..." />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="messageLimit" class="">We appect .doc, .docx, .pdf and .txt files up to 1MB</label>
+            </div>
+            <div class="form-group">
+              <label for="messageLimit" class="">Cover letter</label>
+              <textarea class="form-control col-sm-12 col-lg-8" rows="4" cols="10" placeholder="Detail and specific examples will make your application stronger..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mb-5" id="submit">Save change</button>
+          </form>
+        </div>
+        <div id="robot" class="container tab-pane fade">
+          <div class="row info">
+            <div class="col-md-5">
+              <h3 class="m-0">My Job Robot</h3>
+              <p>Add new, edits, unsubscibe your Job Robots here.</p>
+            </div>
+            <div class="col-md-7">
+              <div class="jr-robby-image"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    includeHTML();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>header</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
+  <script src="https://unpkg.com/ionicons@4.1.1/dist/ionicons.js"></script>
+  <style>
+    nav ul li a:hover {
+      color: white !important;
+    }
+
+    .li1 {
+      margin-left: 30px;
+      border-bottom: 2px solid #221F25;
+      padding-bottom: 3px;
+    }
+
+    #text-header {
+      color: #bbbdbf;
+      font-size: 16px;
+      font-weight: 400;
+      box-sizing: content-box;
+    }
+
+    #login {
+      background-color: #2b2b2c !important;
+      border-radius: 10px;
+      color: #bbbdbf;
+      font-size: 16px;
+      padding: 5px 5px 5px 5px;
+    }
+
+    #login:hover {
+      color: white;
+      background-color: black !important;
+    }
+
+    /* home */
+
+    .text_title {
+      color: white;
+      font-size: 34px;
+    }
+    select {
+      /*for firefox*/
+      -moz-appearance: none;
+      /*for chrome*/
+      -webkit-appearance:none;
+      appearance: none;
+    }
+    .a_hover:hover{
+      background-color: white;
+      cursor: pointer;
+      color: black !important;
+    }
+  </style>
+  <script>
+    function a() {}
+  </script>
+</head>
+
+<body style="min-width:350px;">
+  <div style="background-color:#221f20;">
+    <!-- header -->
+    <div class="container-fluid fixed-top">
+      <div class="row" style="background-color:#221f20;max-height:56px;">
+        <div class="col-lg-1 col-xl-1"></div>
+        <div class="col-lg-11 col-xl-10 col-12">
+          <div class="row">
+            <!-- ----------- -->
+            <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 p-0">
+              <div class="col-2 col-sm-2 col-md-2 navbar navbar-expand-lg d-inline-block navbar-dark text-left">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              </div>
+            </div>
+            <!-- ----------- -->
+            <div class="col-xl-2 col-lg-1 col-5 col-sm-5 col-md-5 p-0">
+              <div class="d-inline-block mt-2 text-lg-left text-xl-left text-right w-100">
+                <a class="" href="#"><img src="image/logo-itviec.png" style="width: 108px; height: 42px; vertical-align: middle;box-sizing: border-box;"></a>
+              </div>
+            </div>
+            <!-- ----------- -->
+            <div class="col-5 col-sm-5 col-md-5 col-lg-10 col-xl-8 p-0 text-right">
+              <div class="d-lg-none pt-2 w-90">
+                <a class="navbar-brand" id="login" href="#">Đăng Nhập</a>
+              </div>
+              <nav class="navbar navbar-expand-lg d-inline-block p-0">
+                <div class="collapse navbar-collapse">
+                  <ul class="nav">
+                    <li class="pt-2 d-none d-md-none d-lg-block d-xl-block ">
+                      <a class="nav-link  pl-0" href="#">
+      	        			<img src="image/notifition.png" style="width: 28px; height: 28px;">
+      	        		</a>
+                    </li>
+                    <li class="pt-2">
+                      <a class="nav-link pl-lg-0 pl-xl-2" href="#" id="text-header">Việc Làm IT</a>
+                    </li>
+                    <li class="pt-2">
+                      <a class="nav-link pl-lg-0 pl-xl-2" href="#" id="text-header">Công Ty IT Hàng Đầu</a>
+                    </li>
+                    <li class="pt-2">
+                      <a class="nav-link pl-lg-0 pl-xl-2" href="#" id="text-header">Blog</a>
+                    </li>
+                    <li class="pt-2 pl-lg-0 pl-xl-2">
+                      <a class="navbar-brand pt-2 pb-2" id="login" href="#">Đăng Nhập</a>
+                    </li>
+                    <li class="pt-3 pr-0 pl-lg-0 pl-xl-2">
+                      <label class="switch-light" style="width: 80px;">
+      					  <input type="checkbox">
+      					  <span class="alert alert-light"  style="background-color: black; border-radius: 22px;border-style: solid;border-color: #bbbdbf;border-width: 1px;height: 5px;margin-bottom:3px;">
+      				    	<span style="font-size: 13px;">VN</span>
+      					    <span style="font-size: 13px;">EN</span>
+      					    <a style="background-color: #bbbdbf;border-radius: 13px;"></a>
+      					  </span>
+  			         </label>
+                    </li>
+                    <li class="pt-2 pl-lg-0 pl-xl-2">
+                      <a class="nav-link" href="#" id="text-header">Nhà Tuyển Dụng</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <!-- ----------- -->
+            <nav class="d-lg-none d-xl-none" style="background-color:#2e2a2b;">
+              <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav">
+                  <li class="list-inline-item li1">
+                    <a class="nav-link" href="#" id="text-header" style="width:auto;">Việc Làm IT</a>
+                  </li>
+                  <li class="list-inline-item li1">
+                    <a class="nav-link" href="#" id="text-header">Công Ty IT Hàng Đầu</a>
+                  </li>
+                  <li class="list-inline-item li1">
+                    <a class="nav-link" href="#" id="text-header">Blog</a>
+                  </li>
+                  <li class="list-inline-item li1">
+                    <a class="nav-link" href="#" id="text-header">Nhà Tuyển Dụng</a>
+                  </li>
+                  <li class="list-inline-item li1">
+                    <label class="switch-light" onclick="" style="width: 80px;padding: 15px 0px 0px 0px;">
+                <input type="checkbox">
+                <span class="alert alert-light"  style="background-color: black; border-radius: 22px;border-style: solid;border-color: #bbbdbf;border-width: 1px;height: 12px;">
+                  <span style="font-size: 13px;box-sizing: content-box;">VN</span>
+                  <span style="font-size: 13px;">EN</span>
+                  <a style="background-color: #bbbdbf;border-radius: 13px;"></a>
+                </span>
+              </label>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <!-- ----------- -->
+          </div>
+        </div>
+        <div class="col-lg-0 col-xl-1 col-0"></div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- title -->
+    <div class="container-fluid pt-5">
+      <div class="row">
+        <div class="col-lg-1 col-xl-1 col-0 col-sm-0 col-md-0 "></div>
+        <div class="col-lg-10 col-xl-10 col-12">
+          <div class="row">
+            <div class="col-lg-1 col-xl-1 "></div>
+            <div class="col-lg-11 col-xl-11 pl-0">
+              <h1 class="text_title text-center text-lg-left text-xl-left pt-5">1,767 Việc Làm IT Cho Developer Chất
+            </h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1 col-xl-1 col-0"></div>
+      </div>
+
+    </div>
+    <!-- end tittle -->
+    <!-- search -->
+    <div class="container-fluid pt-5 pb-xl-0 pb-lg-0 pb-5">
+      <div class="row">
+        <div class="col-lg-1 col-xl-1"></div>
+        <div class="col-lg-11 col-xl-10 col-12">
+          <div class="row">
+            <div class="col-lg-1 col-xl-1 "></div>
+            <div class="col-lg-11 col-xl-11">
+              <div class="row">
+                <!-- search by input -->
+                <div class="col-xl-6 col-lg-6 pl-lg-0 pl-xl-0">
+                  <div class="input-group" style="height: 60px;background-color: white;">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-1">
+                          <div class="input-group-prepend pt-3">
+                            <ion-icon name="search" style="font-size: 25px;color: #8B8B8B;"></ion-icon>
+                          </div>
+                        </div>
+                        <div class="col-11">
+                          <input class="pl-0 pt-3" type="text" style="border-style: none;border: 0px;width: 100%;font-size: 18px;font-family: 'Roboto', sans-serif;color: #6D6D6D;" placeholder="Tìm kiếm theo kỹ năng, chức vụ, công ty">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end search by input -->
+                <!-- search by city -->
+                <div class="col-xl-3 col-lg-3">
+                  <div class="input-group" style="height: 60px;background-color: white;">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-1">
+                          <div class="input-group-prepend pt-3">
+                            <ion-icon name="pin" style="font-size: 25px;color: #8B8B8B;"></ion-icon>
+                          </div>
+                        </div>
+                        <div class="col-10">
+                          <select class="float-left pt-3 pb-3" style="border-style: none;border: 0px;width:100%;font-size: 18px;font-family: 'Roboto', sans-serif;color: #6D6D6D;overflow: hidden;" >
+                            <option value="">Thành Phố</option>
+                            <option value="">Hà Nội</option>
+                            <option value="">Hồ Chí Minh</option>
+                            <option value="">Đà Nẵng</option>
+                            <option value="">Other</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end search by city -->
+                <!-- button search -->
+                <div class="col-xl-2 col-lg-2" style="height:60px;">
+                  <button type="button" class="btn w-100 font-weight-bold" style="height:60px;background-color: #EA1E30;color:white;font-size:22px;">Tìm Kiếm</button>
+                </div>
+                <!-- end button search -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1 col-xl-1 col-0"></div>
+      </div>
+    </div>
+    <!-- end search -->
+    <!-- list type -->
+    <div class="container-fluid pl-0 pt-5 pb-5 d-none d-lg-block d-xl-block" style="color:white;">
+      <div class="row">
+        <div class="col-lg-1 col-xl-1 col-0 col-sm-0 col-md-0 "></div>
+        <div class="col-lg-11 col-xl-10 col-12">
+          <div class="row">
+            <div class="col-lg-1 col-xl-1 "></div>
+              <div class="col-lg-11 col-xl-11">
+                <a class="p-2 a_hover">Tester</a>
+                <a class="p-2 a_hover">Java</a>
+                <a class="p-2 a_hover">PHP</a>
+                <a class="p-2 a_hover">Android</a>
+                <a class="p-2 a_hover">.NET</a>
+                <a class="p-2 a_hover">iOS</a>
+                <a class="p-2 a_hover">Business Analyst</a>
+                <a class="p-2 a_hover">QA QC</a>
+                <a class="p-2 a_hover">Việc làm IT theo kỹ năng</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1 col-xl-1 col-0"></div>
+      </div>
+    </div>
+    <!-- end list type -->
+  </div>
+  <!-- header of body -->
+  <div class="container-fluid pt-4 pb-4 pl-lg-0 pl-xl-0" style="background-color:#e9e9e9">
+    <div class="row">
+      <div class="col-lg-1 col-xl-1 col-0 col-sm-0 col-md-0 "></div>
+        <div class="col-lg-11 col-xl-10 col-12">
+          <div class="row">
+            <div class="col-lg-1 col-xl-1 "></div>
+            <div class="col-lg-11 col-xl-11">
+              <a style="color:#353535;font-size: 32px;font-weight:600;">Nhà Tuyển Dụng</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-1 col-xl-1 col-0"></div>
+    </div>
+  </div>
+  <!-- end header of body -->
+  <!-- middle of body -->
+  <div class="container-fluid pt-2" style="background-color:#e9e9e9">
+    <div class="row">
+      <div class="col-lg-1 col-xl-1 col-0 col-sm-0 col-md-0 "></div>
+      <div class="col-lg-11 col-xl-10 col-12">
+        <div class="row">
+          <div class="col-lg-1 col-xl-1 "></div>
+          <div class="col-lg-11 col-xl-11">
+            <div class="row">
+              <div class="col-xl-4 col-lg-3" style="background-color:red;height:340px;">
+
+              </div>
+              <div class="col-xl-4 col-lg-3" style="background-color:yellow;height:340px;">
+
+              </div>
+              <div class="col-xl-4 col-lg-3" style="background-color:red;height:340px;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-1 col-xl-1 col-0"></div>
+    </div>
+  </div>
+  <!-- end middle of body -->
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+/* #lb-email {
+  margin-right: 30px;
+}
+#ip-email {
+
+}
+#lb-name {
+  margin-right: 20px;
+}
+#lb-cv {
+  margin-right: 40px;
+} */
+
+#submit {
+  background-color: red;
+  font-weight: 600;
+  font-size: 20px;
+  width: 150px;
+}
+
+.font-weight-upper-normal {
+  font-weight: 400;
+}
+
+body {
+  -webkit-font-smoothing: antialiased !important;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400;
+}
+
+.jr-robby-image {
+  -webkit-transform: translate(-8px, 0);
+  transform: translate(-8px, 0);
+  background: url(/picture/rocket-application.jpg) no-repeat;
+  background-size: 365px 441px;
+  background-position: 0 -319px;
+  width: 128px;
+  height: 123px;
+  background-size: 269px 300px;
+  background-position: 0 -217px;
+  width: 95px;
+  height: 85px;
+}
